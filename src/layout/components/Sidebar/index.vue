@@ -1,7 +1,6 @@
 <!--  -->
 <template>
   <div>
-    <div style="position: fixed;top: 10px;right: 10px;font-size: 14px;">activeMenu: {{ activeMenu }}</div>
     <el-scrollbar>
       <el-menu
         :default-active="activeMenu"

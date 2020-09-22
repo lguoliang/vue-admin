@@ -7,24 +7,19 @@
     <Sidebar class="sidebar-container" />
     <!--  -->
     <div class="main-container">
+      <Navbar />
+      <!--  -->
       <AppMain />
-      <!-- <section class="app-main">
-        <transition name="fade-transform" mode="out-in">
-          <keep-alive>
-            <router-view :key="this.$route.path" />
-          </keep-alive>
-        </transition>
-      </section> -->
     </div>
   </div>
 </template>
 
 <script>
-import { Sidebar, AppMain } from './components'
+import { Sidebar, AppMain, Navbar } from './components'
 export default {
   name: 'Layout',
   components: {
-    Sidebar, AppMain
+    Sidebar, AppMain, Navbar
   },
   data() {
     return {
