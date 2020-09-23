@@ -8,7 +8,7 @@
     /> -->
     <!-- <breadcrumb id="breadcrumb-container" class="breadcrumb-container" /> -->
     <div class="right-menu">
-      <span class="logout">退出</span>
+      <span class="logout" @click="logout">退出</span>
     </div>
   </div>
 </template>

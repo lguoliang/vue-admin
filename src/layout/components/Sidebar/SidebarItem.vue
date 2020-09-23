@@ -56,11 +56,17 @@ export default {
         return !item.hidden
       })
       // 如果没有子路由器要显示，请显示父
-      if (showingChildren.length === 0) this.onlyOneChild = { ... parent, path: '', noShowingChildren: true }
+      if (showingChildren.length === 0) {
+        this.onlyOneChild = { ... parent, path: '', noShowingChildren: true }
+        return true
+      }
       // 如果只有一个子路由器，则默认情况下会显示该子路由器
-      if (showingChildren.length === 1) this.onlyOneChild = showingChildren[0]
+      if (showingChildren.length === 1) {
+        this.onlyOneChild = showingChildren[0]
+        return true
+      }
       //
-      return !(showingChildren.length > 1)
+      return false
     },
 
     resolvePath(routePath) {

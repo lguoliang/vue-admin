@@ -1,11 +1,11 @@
 <!--  -->
 <template>
-  <div>Directive</div>
+  <div>404</div>
 </template>
 
 <script>
 export default {
-  name: 'Directive',
+  name: 'Page404',
   components: {},
   data() {
     return {

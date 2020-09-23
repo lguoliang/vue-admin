@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-  <div>dashboard</div>
+  <div>dashboard TODO</div>
 </template>
 
 <script>
