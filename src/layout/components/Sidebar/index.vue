@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     handleSelect(key, keyPath) {
-      console.log('sel', key, keyPath)
+      // console.log('sel', key, keyPath)
     }
   }
 }

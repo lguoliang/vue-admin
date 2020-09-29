@@ -6,7 +6,7 @@
       :is-active="true"
       @toggleClick="toggleSideBar"
     /> -->
-    <!-- <breadcrumb id="breadcrumb-container" class="breadcrumb-container" /> -->
+    <breadcrumb id="breadcrumb-container" class="breadcrumb-container" />
     <div class="right-menu">
       <span class="logout" @click="logout">退出</span>
     </div>
@@ -14,9 +14,11 @@
 </template>
 
 <script>
+import Breadcrumb from '@/components/Breadcrumb'
 export default {
   name: '',
   components: {
+    Breadcrumb
   },
   data() {
     return {

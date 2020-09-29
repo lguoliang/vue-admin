@@ -54,3 +54,9 @@ export default {
   }
 }
 </script>
+
+<style>
+  .home {
+    margin: 0;
+  }
+</style>
